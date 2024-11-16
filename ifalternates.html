@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Alternates</title>
+</head>
+<body>
+    <h1>Its If Alternates</h1>
+    <script>
+        // Ternary Operator..
+
+        // let age = 18;
+        // let (age > 18) ? ('This is Good') : ('This is Not Good');
+
+        // let umar = 18;
+        // let result = umar > 18 ? ('Chalo Umar Jyada Hai') : ('Nahi Bacche Abhi Tume Chotey Ho');
+        // console.log(result);
+
+        // Guard Operator..
+        // let age;
+        // let finalAge = age || 12; // As here 12 is or value of age as it gives the priority to the left assignment as if left value is falsy then it will take the right value of ||
+        // console.log(age , finalAge);
+
+
+        // Default Value
+        // let age = 0;                      
+        // let finalAge = age ?? 11; // Here is uses 11 as default value as if age's value is not defined then it will take the default value which is finalAge
+        // console.log(age , finalAge);
+
+        //  Lets make a simple programe for Metro ticket discount
+        console.log('Welcome To Metro Ticket Purchase Portal.');
+        console.log('Normal Ticket Price is 40 Rupees');
+        let TicketPrice = 40;
+        let Gender = prompt(`Enter Your Gender \nWrite 'F' For Female & \n'M' For Male `);
+        let Age = parseFloat(prompt('Enter Your Age?'));
+        
+        if (Age <= 8 && Age > 5 && (Gender === 'F' || Gender === 'f')){
+           console.log('As you are female and your age is less than 8');
+           console.log('Your Discount Percentage is 100%');
+           console.log('So Your Ticket Price is Absolutely Free');
+        }
+        else if (Age <= 5 && (Gender === 'F' || Gender === 'f')){
+            console.log('Your are Female and your age is less than five year');
+            console.log('Your Discount Percentage is 100%');
+            console.log('Your Ticket is Free of Cost');
+        }
+        else if (Age > 65 && (Gender === 'F' || Gender === 'f')){
+           console.log('As your age is more than 65 and you are female');
+           console.log('Your Discount Percentage is 80%');
+           console.log('Your ticket price is 8 Rupees');
+       }
+         else if (Age <= 8 && Age > 5){
+            console.log('As your age is 8 or Less than 8');
+            console.log('Your Discount Percentage is 50%');
+            console.log('Your ticket price is 20 Rupees');
+        }
+        else if (Gender === 'F' || Gender === 'f'){
+           console.log('You are Female');
+           console.log('You Will Get 50% Discount');
+           TicketPrice = 20;
+           console.log('Your Ticket Price is ' + TicketPrice);
+       }
+         else if (Age <= 5){
+            console.log('Your age is less than five year');
+            console.log('Your Ticket is Free of Cost');
+        }
+         else if (Age > 65){
+            console.log('As your age is more than 65');
+            console.log('Your Discount Percentage is 30%');
+            console.log('Your ticket price is 28 Rupees');
+        }
+
+    </script>
+</body>
+</html>

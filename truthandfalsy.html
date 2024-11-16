@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy and Falsy</title>
+</head>
+<body>
+    
+    <div id="container"></div>
+    
+    <script>
+
+
+
+                
+        const countries = [
+  {
+    country: "Afghanistan",
+    countryCode: 93,
+    isoCodes: "AF / AFG",
+    population: 29121286,
+    areaKm2: 647500,
+    gdp: "20.65 Billion"
+  },
+  {
+    country: "Albania",
+    countryCode: 355,
+    isoCodes: "AL / ALB",
+    population: 2986952,
+    areaKm2: 28748,
+    gdp: "12.8 Billion"
+  },
+  {
+    country: "Algeria",
+    countryCode: 213,
+    isoCodes: "DZ / DZA",
+    population: 34586184,
+    areaKm2: 2381740,
+    gdp: "215.7 Billion"
+  },
+  {
+    country: "American Samoa",
+    countryCode: "1-684",
+    isoCodes: "AS / ASM",
+    population: 57881,
+    areaKm2: 199,
+    gdp: "462.2 Million"
+  },
+  {
+    country: "Andorra",
+    countryCode: 376,
+    isoCodes: "AD / AND",
+    population: 84000,
+    areaKm2: 468,
+    gdp: "4.8 Billion"
+  },
+  {
+    country: "Angola",
+    countryCode: 244,
+    isoCodes: "AO / AGO",
+    population: 13068161,
+    areaKm2: 1246700,
+    gdp: "124 Billion"
+  },
+  {
+    country: "Anguilla",
+    countryCode: "1-264",
+    isoCodes: "AI / AIA",
+    population: 13254,
+    areaKm2: 102,
+    gdp: "175.4 Million"
+  },
+  {
+    country: "Antarctica",
+    countryCode: 672,
+    isoCodes: "AQ / ATA",
+    population: 0,
+    areaKm2: 14000000,
+    gdp: null
+  },
+  {
+    country: "Antigua and Barbuda",
+    countryCode: "1-268",
+    isoCodes: "AG / ATG",
+    population: 86754,
+    areaKm2: 443,
+    gdp: "1.22 Billion"
+  },
+  {
+    country: "Argentina",
+    countryCode: 54,
+    isoCodes: "AR / ARG",
+    population: 41343201,
+    areaKm2: 2766890,
+    gdp: "484.6 Billion"
+  },
+]
+const container = document.getElementById("container");
+
+
+countries.forEach((country) => {
+            const countryDiv = document.createElement("div");
+            countryDiv.innerHTML = `
+                <h1>${country.country}</h1>
+                <p>Country Code: ${country.countryCode}</p>
+                <p>ISO Codes: ${country.isoCodes}</p>
+                <p>Population: ${country.population}</p>
+                <p>Area (km²): ${country.areaKm2}</p>
+                <p>GDP: ${country.gdp}</p>
+            `;
+            container.appendChild(countryDiv);
+        });
+
+    //    let cars = ["BMW", "Volvo", true, false, null];
+    //    for (let index = 0; index < cars.length; index++) {
+    //     // let element = cars[index];
+    //         console.log(cars[index]);
+    //    }
+
+    // Nested object and simple object revision.
+    let objecrevision = {
+        firstName: {
+            office: 'purvish',
+            home: 'prem',
+        },
+        lastName: 'Sharma',
+        age: 80,
+        eyeColor: "blue",
+    }
+
+    console.log(objecrevision);
+    console.log(objecrevision.firstName);
+    console.log(objecrevision.firstName.office);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
